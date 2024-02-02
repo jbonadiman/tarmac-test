@@ -1,0 +1,22 @@
+{
+  "services": {
+    "tarmac-test": {
+      "name": "Tarmac Test",
+      "functions": {
+        "test": {
+          "filepath": "/functions/tarmac.wasm"
+        }
+      },
+      "routes": [
+        {
+          "type": "http",
+          "path": "/",
+          "methods": [
+            "POST"
+          ],
+          "function": "test"
+        }
+      ]
+    }
+  }
+}
